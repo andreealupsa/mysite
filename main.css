@@ -60,7 +60,7 @@ li {
 }
 
 body {
-background-image: url(/assets/pexels-photo-3560044.jpeg);
+background-image: url(./assets/pexels-photo-3560044.jpeg);
 background-position: center center;
 background-size: cover;
 background-repeat: no-repeat;
