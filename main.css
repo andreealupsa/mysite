@@ -6,7 +6,8 @@
 }
 
 .profile-card {
-  width: 480px;
+  width: 500px;
+  height: 500px;
   max-width: calc(100vw - 10px);
 }
 
@@ -37,6 +38,7 @@ img {
   width: 120px;
   height: 120px;
   border-radius: 50%;
+  
 }
 .profile-image {
   margin-top: -60px;
@@ -60,23 +62,23 @@ li {
 }
 
 body {
-background-image: url(./assets/pexels-photo-3560044.jpeg);
-background-position: center center;
-background-size: cover;
-background-repeat: no-repeat;
-background-attachment: fixed;
+  background-image: url(./assets/pexels-photo-3560044.jpeg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .profile-card {
-  background-color: hsla(0, 0%, 100%, .5);
-  border-radius: 4px;
-  box-shadow: hsla(0, 0%, 0%, .8) 10px 10px 80px;
+  background: rgb(255,249,245);
+  background: radial-gradient(circle, rgba(255,249,245,1) 56%, rgba(244,159,187,1) 100%);
+  border-radius: 8px;
+  box-shadow: hsla(200, 50%, 30%, .8) 5px 5px 25px;
 }
 
 img {
   padding: 1px;
   background-color: #666;
-  filter: grayscale(50%);
 }
 
 .content {
@@ -86,7 +88,6 @@ img {
 img:hover {
   transform: scale(1.1);
   transition: all 0.5s ease-in-out;
-  filter: grayscale(20%);
   
 }
 
@@ -97,25 +98,104 @@ img:hover {
 h1 {
   font-size: 25px;
   font-family: "Helvetica";
-  
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+h2 {
+  font-size: 20px;
+  position: relative;
+  left: 440px;
+  bottom: -18px;
+  color:aliceblue;
+  text-shadow: 2px 2px 2px darkblue;
+  font-family: "Helvetica";
 }
 
 ul {
-  background-color:azure;
+  background-color: none;
   border-radius: 20px;
 }
 
-.location {
-  color: darkblue;
+li {
+  position:relative;
+  left: 550px;
+  top: -8px
 }
 
-.contact {
-  color: darkblue;
-  font-size: 20px;
+}
+
+.content {
   font-family: 'Calibri';
 }
 
 .about {
-  font-size: 15px;
-  font-family: "Helvetica";
+  font-size: 18px;
+  font-family: "Texturina";
+  text-shadow: 2px 2px 4px #f49fba;
 }
+
+.container {
+  width: 1250px;
+  height: calc(100vh - 40px);
+  margin: 20px auto;
+  background-color: hsla(320, 100%, 70%, .45);
+  }
+
+.box {
+  position: absolute;
+}
+
+.container {
+  position: relative;
+
+}
+
+#box4 {
+  background-color: rgb(244, 159, 187);
+  bottom: -70px;
+  width: 1250px;
+  height: 70px;
+  border-style: dotted;
+  border-color: white;
+  border-width: 5px;
+}
+
+#box1 {
+  background-color: rgb(158, 220, 237);
+  left: 0;
+  right: 0;
+  height: 80px;
+  border-style: ridge;
+  border-color: white;
+  border-width: 6px;
+}
+
+#box2 {
+  background-image: url(assets/flowers-5708870_1280.png);
+  top: 80px;
+  bottom: 70px;
+  width: 1250px;
+}
+
+.profile-card {
+  position: relative;
+  left: 375px;
+  bottom: -150px;
+}
+
+h4 {
+  font-size: 18px;
+  font-family: "Helvetica";
+  color:azure;
+  text-shadow: 2px 2px 2px darkred;
+  position:relative;
+  left: 452px;
+  bottom: -18px;
+}
+
+p {
+  font-size: 18px
+}
+
+
