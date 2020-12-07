@@ -1,3 +1,49 @@
+/* ==== A SIMPLE CSS RESET FROM ERIC MEYER ==== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,9 +52,10 @@
 }
 
 .profile-card {
-  width: 500px;
-  height: 500px;
+  width: 32vw;
+  height: 50vh;
   max-width: calc(100vw - 10px);
+  
 }
 
 .profile-card {
@@ -32,16 +79,14 @@ body {
 .head, .content {
   width: 90%;
   margin: 0 auto;
+  
 }
 
 img {
-  width: 120px;
-  height: 120px;
+  width: 6.5vw;
+  height: 12.5vh;
   border-radius: 50%;
   
-}
-.profile-image {
-  margin-top: -60px;
 }
 
 ul {
@@ -74,10 +119,11 @@ body {
   background: radial-gradient(circle, rgba(255,249,245,1) 56%, rgba(244,159,187,1) 100%);
   border-radius: 8px;
   box-shadow: hsla(200, 50%, 30%, .8) 5px 5px 25px;
+ 
 }
 
 img {
-  padding: 1px;
+  padding: 0.0625rem;
   background-color: #666;
 }
 
@@ -91,9 +137,6 @@ img:hover {
   
 }
 
-.head {
-  font-family: 'Calibri';
-}
 
 h1 {
   font-size: 25px;
@@ -103,11 +146,11 @@ h1 {
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 1vw;
   position: relative;
-  left: 440px;
-  bottom: -18px;
-  color:aliceblue;
+  left: 528px;
+  bottom: -22px;
+  color: aliceblue;
   text-shadow: 2px 2px 2px darkblue;
   font-family: "Helvetica";
 }
@@ -118,9 +161,9 @@ ul {
 }
 
 li {
-  position:relative;
-  left: 550px;
-  top: -8px
+  position: relative;
+  left: 630px;
+  top: -2px;
 }
 
 }
@@ -130,20 +173,21 @@ li {
 }
 
 .about {
-  font-size: 18px;
-  font-family: "Texturina";
+  font-size: 20px;
+  font-family: 'Neuton', serif;
   text-shadow: 2px 2px 4px #f49fba;
 }
 
 .container {
-  width: 1250px;
-  height: calc(100vh - 40px);
+  width: 68vw;
+  height: 100.13vh;
   margin: 20px auto;
   background-color: hsla(320, 100%, 70%, .45);
   }
 
 .box {
   position: absolute;
+  
 }
 
 .container {
@@ -154,11 +198,11 @@ li {
 #box4 {
   background-color: rgb(244, 159, 187);
   bottom: -70px;
-  width: 1250px;
+  width: 68vw;
   height: 70px;
   border-style: dotted;
   border-color: white;
-  border-width: 5px;
+  border-width: 5px
 }
 
 #box1 {
@@ -175,13 +219,15 @@ li {
   background-image: url(assets/flowers-5708870_1280.png);
   top: 80px;
   bottom: 70px;
-  width: 1250px;
+  width: 68vw;
 }
 
 .profile-card {
-  position: relative;
-  left: 375px;
-  bottom: -150px;
+  position: sticky;
+  left: 740px;
+  top: auto;
+  top: 220px;
+  min-height: 10vh;
 }
 
 h4 {
@@ -190,12 +236,16 @@ h4 {
   color:azure;
   text-shadow: 2px 2px 2px darkred;
   position:relative;
-  left: 452px;
-  bottom: -18px;
+  left: 538px;
+  bottom: -22px;
 }
 
 p {
-  font-size: 18px
+  font-size: 18px;
+}
+
+html {
+  overflow: hidden;
 }
 
 
