@@ -148,7 +148,7 @@ h1 {
 h2 {
   font-size: 1vw;
   position: relative;
-  left: 528px;
+  left: 490px;
   bottom: -22px;
   color: aliceblue;
   text-shadow: 2px 2px 2px darkblue;
@@ -162,7 +162,7 @@ ul {
 
 li {
   position: relative;
-  left: 630px;
+  left: 600px;
   top: -2px;
 }
 
